@@ -30,7 +30,7 @@ handleSubmit = (e) => {
 
     render(){
     return (
-        <div>
+        <div class="darkTourist">
             <h1>Dark Tourist Destination Generator</h1>
              
             <form onSubmit={this.handleSubmit} action="" className="scopeChoices">
@@ -38,7 +38,7 @@ handleSubmit = (e) => {
                 <input onChange={this.handleChange} type="radio" id="local" name="radAnswer" value={this.state.goLocal} />
                 <label htmlFor="">Feeling Global?</label>
                 <input onChange={this.handleChange} type="radio" id="global" name="radAnswer" value={this.state.goGlobal} />
-                <input type="submit" value="Vacation... if you dare..." />
+                <input class="smashSearch" type="submit" value="Vacation... if you dare..." />
             </form>
         </div>
         )

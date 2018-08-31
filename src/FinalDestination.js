@@ -4,11 +4,12 @@ import React, { Component } from 'react';
 class FinalDestination extends Component {
     render() {
         return (
-            <ul>
+            <ul class="wrapper">
             { 
                 this.props.places.map(singlePlace => {
                     return (
                         <section className="destinationDescription">
+                        
                             <h2>{singlePlace.name}</h2>
                             <img src={singlePlace.url} alt=""/>
                             <p>{singlePlace.description}</p>

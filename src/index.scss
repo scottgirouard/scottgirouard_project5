@@ -1,4 +1,8 @@
 
+.wrapper {
+  max-width: 70%;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -7,6 +11,7 @@ body {
 }
 
 h1, h2 {
+  flex-direction: row;
   font-family: 'Oswald', sans-serif;
   color: rgb(126, 57, 57);
   padding: 20px;
@@ -18,16 +23,56 @@ html {
 }
 
 p {
+  font-family: 'Oswald', sans-serif;
   text-align: center;
+  // width: 70%;
+}
+
+ul {
+  margin: 0 auto;
+  padding: 0;
 }
 
 label {
-  margin: 30%;
+  // margin: 30%;
   font-family: 'Oswald', sans-serif;
   font-size: 20px;
 }
 
 input {
-  margin: 20px;
+  // margin: 20px;
   color: rgb(126, 57, 57);
 }
+
+input.smashSearch {
+  padding: 50px;
+}
+
+img {
+  flex-direction: row;
+  border: 3px solid red;
+}
+
+.darkTourist input, label {
+  display: flex;
+  flex-direction: column;
+  margin-left: 35rem;
+  padding: 20px;
+}
+
+.darkTourist input {
+  align-content: center;
+  margin: 0 auto;
+}
+
+.scopeChoices {
+  justify-content: space-around;
+}
+
+.smashSearch {
+  margin: 10rem;
+}
+
+// .destinationDescription {
+//   margin-left: 7rem;
+// }

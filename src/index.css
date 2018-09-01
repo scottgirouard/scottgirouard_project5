@@ -1,5 +1,5 @@
 .wrapper {
-  max-width: 70%; }
+  max-width: 80%; }
 
 body {
   margin: 0;
@@ -37,7 +37,10 @@ input.smashSearch {
 
 img {
   flex-direction: row;
-  border: 3px solid red; }
+  margin-left: 0 auto;
+  margin-right: 0 auto;
+  border: 3px solid red;
+  width: 100%; }
 
 .darkTourist input, label {
   display: flex;
@@ -54,3 +57,7 @@ img {
 
 .smashSearch {
   margin: 10rem; }
+
+.destinationDescription {
+  width: 70%;
+  margin: 0 auto; }

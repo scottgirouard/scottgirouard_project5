@@ -5,29 +5,55 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-color: rgba(155, 141, 141, 0.8); }
+  background: linear-gradient(0.25turn, #364248, #ebf8e1aa, #4b443c); }
 
-h1, h2 {
+h1 {
   flex-direction: row;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Special Elite', cursive;
   color: #7e3939;
   padding: 20px;
-  text-align: center; }
+  text-align: center;
+  font-size: 5rem; }
+
+h2 {
+  flex-direction: row;
+  font-family: 'Special Elite', cursive;
+  color: #7e3939;
+  padding: 20px;
+  text-align: center;
+  font-size: 2rem; }
 
 html {
   font-family: 'Oswald', sans-serif; }
 
 p {
   font-family: 'Oswald', sans-serif;
-  text-align: center; }
+  text-align: center;
+  line-height: 2.5rem;
+  font-size: 18px; }
 
 ul {
   margin: 0 auto;
   padding: 0; }
 
+form {
+  margin: 0 auto; }
+
 label {
   font-family: 'Oswald', sans-serif;
-  font-size: 20px; }
+  font-size: 20px;
+  text-align: center;
+  border: 1.5px solid #7D3739;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  width: 9%; }
+
+label:hover {
+  font-weight: 800;
+  color: #7e3939;
+  border: 5px solid #7D3739;
+  transition: 0.3s ease-in-out; }
 
 input {
   color: #7e3939; }
@@ -39,24 +65,66 @@ img {
   flex-direction: row;
   margin-left: 0 auto;
   margin-right: 0 auto;
-  border: 3px solid red;
+  border: 13px solid #7D3739;
+  border-style: outset;
   width: 100%; }
+
+img.netflix {
+  width: 20%;
+  height: 20%;
+  max-width: 30%;
+  border: none;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10px; }
+
+a {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  width: 17%;
+  font-family: 'Oswald', sans-serif;
+  color: black; }
+
+a:hover {
+  color: #7D3739;
+  font-weight: 800; }
 
 .darkTourist input, label {
   display: flex;
   flex-direction: column;
-  margin-left: 35rem;
+  margin: 0 auto;
   padding: 20px; }
 
 .darkTourist input {
-  align-content: center;
-  margin: 0 auto; }
+  margin-top: 7px;
+  margin-bottom: 7px; }
 
 .scopeChoices {
   justify-content: space-around; }
 
-.smashSearch {
-  margin: 10rem; }
+input.smashSearch {
+  margin-top: 27px; }
+
+input.smashSearch:hover {
+  border: 5px solid #7D3739;
+  transition: 0.3s ease-in-out; }
+
+input[type=submit] {
+  padding: 5px 15px;
+  background: rgba(184, 124, 124, 0.166);
+  border: 1.5px solid #7D3739;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding: 15px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 800;
+  font-size: 15px; }
 
 .destinationDescription {
   width: 70%;

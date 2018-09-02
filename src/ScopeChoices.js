@@ -32,7 +32,7 @@ handleSubmit = (e) => {
     return (
         <div class="darkTourist">
             <h1>Dark Tourist Destination Generator</h1>
-             
+
             <form onSubmit={this.handleSubmit} action="" className="scopeChoices">
                 <label htmlFor="">Staying Local?</label>
                 <input onChange={this.handleChange} type="radio" id="local" name="radAnswer" value={this.state.goLocal} />
@@ -40,6 +40,11 @@ handleSubmit = (e) => {
                 <input onChange={this.handleChange} type="radio" id="global" name="radAnswer" value={this.state.goGlobal} />
                 <input class="smashSearch" type="submit" value="Vacation... if you dare..." />
             </form>
+
+            <a href="https://www.netflix.com/title/80189791">Watch 'Dark Tourist' on Netflix:
+
+                <img class="netflix" src="https://upload.wikimedia.org/wikipedia/commons/7/75/Netflix_icon.svg" alt="" /></a>
+
         </div>
         )
     }

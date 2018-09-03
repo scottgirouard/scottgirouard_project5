@@ -11,15 +11,18 @@ h1 {
   flex-direction: row;
   font-family: 'Special Elite', cursive;
   color: #7e3939;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
-  font-size: 5rem; }
+  font-size: 4.8rem; }
+
+h1:hover {
+  color: #7e3939; }
 
 h2 {
   flex-direction: row;
   font-family: 'Special Elite', cursive;
   color: #7e3939;
-  padding: 20px;
+  padding: 25px;
   text-align: center;
   font-size: 2rem; }
 
@@ -30,7 +33,9 @@ p {
   font-family: 'Oswald', sans-serif;
   text-align: center;
   line-height: 2.5rem;
-  font-size: 18px; }
+  font-size: 18px;
+  padding: 30px;
+  border-bottom: 0.5px groove white; }
 
 ul {
   margin: 0 auto;
@@ -50,10 +55,9 @@ label {
   width: 9%; }
 
 label:hover {
-  font-weight: 800;
   color: #7e3939;
-  border: 5px solid #7D3739;
-  transition: 0.3s ease-in-out; }
+  border: 3px solid #7D3739;
+  transition: 0.2s ease-in-out; }
 
 input {
   color: #7e3939; }
@@ -91,8 +95,7 @@ a {
   color: black; }
 
 a:hover {
-  color: #7D3739;
-  font-weight: 800; }
+  color: #7D3739; }
 
 .darkTourist input, label {
   display: flex;
@@ -112,7 +115,10 @@ input.smashSearch {
 
 input.smashSearch:hover {
   border: 5px solid #7D3739;
-  transition: 0.3s ease-in-out; }
+  transition: 0.3s ease-in-out;
+  background-color: rgba(75, 34, 34, 0.865);
+  color: white;
+  font-size: 15px; }
 
 input[type=submit] {
   padding: 5px 15px;
@@ -129,3 +135,53 @@ input[type=submit] {
 .destinationDescription {
   width: 70%;
   margin: 0 auto; }
+
+@media (max-width: 1180px) {
+  label {
+    font-size: 15px; }
+  h1 {
+    padding: 15px; }
+  img.netflix {
+    width: 25%;
+    height: 25%; } }
+
+@media (max-width: 885px) {
+  label {
+    font-size: 13px; }
+  h1 {
+    font-size: 3.5rem; }
+  img.netflix {
+    width: 30%;
+    height: 30%; } }
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem; }
+  label {
+    width: 15%; }
+  img.netflix {
+    width: 35%;
+    height: 35%; } }
+
+@media (max-width: 480px) {
+  label {
+    width: 25%; }
+  input.smashSearch {
+    font-size: 12px; }
+  a {
+    width: 33%;
+    font-size: 12px; }
+  h2 {
+    font-size: 25px; }
+  p {
+    text-align: center;
+    font-size: 13px;
+    line-height: 20px;
+    padding: 20px 0 20px 0; }
+  img {
+    flex-direction: column;
+    width: 90%;
+    border: 8px solid #7D3739; }
+  img.netflix {
+    width: 40%;
+    height: 40%; } }

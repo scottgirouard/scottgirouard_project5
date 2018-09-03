@@ -36,9 +36,9 @@ handleSubmit = (e) => {
             <form onSubmit={this.handleSubmit} action="" className="scopeChoices">
                 <label htmlFor="">Staying Local?</label>
                 <input onChange={this.handleChange} type="radio" id="local" name="radAnswer" value={this.state.goLocal} />
-                <label htmlFor="">Feeling Global?</label>
+                <label htmlFor="">Going Global?</label>
                 <input onChange={this.handleChange} type="radio" id="global" name="radAnswer" value={this.state.goGlobal} />
-                <input class="smashSearch" type="submit" value="Vacation... if you dare..." />
+                <input class="smashSearch" type="submit" value="Your final destinations are..." />
             </form>
 
             <a href="https://www.netflix.com/title/80189791">Watch 'Dark Tourist' on Netflix:

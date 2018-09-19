@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import scrollToComponent from 'react-scroll-to-component';
 
 class ScopeChoices extends Component {
     constructor(){
@@ -16,6 +17,11 @@ class ScopeChoices extends Component {
         });
     }
 
+    clickLabel = (e) => {
+        
+        console.log('clicked');
+    }
+
 handleSubmit = (e) => {
     // Prevent the page from refreshing upon submit 
         e.preventDefault();
@@ -26,24 +32,26 @@ handleSubmit = (e) => {
 
 
 } 
-
+// scrollToComponent = () => {
+//     console.log(scrollToComponent);
+// }
 
     render(){
     return (
-        <div class="darkTourist">
+        <div className="darkTourist">
             <h1>Dark Tourist Destination Generator</h1>
 
             <form onSubmit={this.handleSubmit} action="" className="scopeChoices">
-                <label htmlFor="">Staying Local?</label>
-                <input onChange={this.handleChange} type="radio" id="local" name="radAnswer" value={this.state.goLocal} />
-                <label htmlFor="">Going Global?</label>
-                <input onChange={this.handleChange} type="radio" id="global" name="radAnswer" value={this.state.goGlobal} />
-                <input class="smashSearch" type="submit" value="Your final destinations are..." />
+                <label htmlFor="local">Staying Local?</label>
+                <input onChange={this.handleChange} type="radio" className="checked" id="local" name="radAnswer" value={this.state.goLocal} />
+                <label onClick={this.clickLabel} htmlFor="global">Going Global?</label>
+                <input onChange={this.handleChange} type="radio" className="checked" id="global" name="radAnswer" value={this.state.goGlobal} />
+                <input className="smashSearch" type="submit" value="Your final destinations are..." />
             </form>
 
             <a href="https://www.netflix.com/title/80189791">Watch 'Dark Tourist' on Netflix:
 
-                <img class="netflix" src="https://upload.wikimedia.org/wikipedia/commons/7/75/Netflix_icon.svg" alt="" /></a>
+                <img className="netflix" src="https://upload.wikimedia.org/wikipedia/commons/7/75/Netflix_icon.svg" alt="" /></a>
 
         </div>
         )

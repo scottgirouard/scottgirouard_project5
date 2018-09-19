@@ -69,8 +69,9 @@ label {
 
 label:hover {
   color: rgb(126, 57, 57);
-  border: 3px solid #7D3739;
+  border: 5px solid #7D3739;
   transition: 0.2s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.166);
 }
 
 input {
@@ -157,6 +158,10 @@ input[type=submit] {
     font-weight: 800;
     font-size: 15px;
 }
+
+
+input.checked[type="radio"]{visibility: hidden;}
+
 
 .destinationDescription {
   width: 70%;
